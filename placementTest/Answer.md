@@ -72,11 +72,90 @@ Both num1 and num2 does not contain any leading zero.
 You must not use any built-in BigInteger library or convert the inputs to integer directly.
 
 ```java
-Public class Solution{
-    int adding = 0;
-	Public String addStrings(String num1, String num2){
-        
+
+public class Solution{
+    
+	    public String addStrings(String num1, String num2){
+        // 不考虑负数
+        if(num1 == null || num2 == null) throw new IllegalArgumentException("Illegal Argument : has null！");
+        int adding = 0;
+        int len1 = num1.length()-1;
+        int len2 = num2.length()-1;
+        StringBuffer strBuff = new StringBuffer();
+
+        while(len1>-1 || len2>-1){
+            int sumValue = (len1>-1? num1.charAt(len1--)-'0':0) + (len2>-1? num2.charAt(len2--)-'0':0) + adding;
+            adding = sumValue<10? 0:1;
+
+            strBuff.insert(0,sumValue%10);
+        }
+        return strBuff.toString();
     }
 }
 
 ```
+
+>2. Invert a binary tree.
+>    4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+to
+>    4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+Trivia:
+This problem was inspired by this original tweet by Max Howell:
+Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off.
+
+```java
+public class Solution{
+    public TreeNode invertTree(TreeNode root){
+    
+}
+}
+
+
+```
+
+>Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+For example,
+Given [3,2,1,5,6,4] and k = 2, return 5.
+Note:
+You may assume k is always valid, 1 <=  k <=  array's length.
+
+```java
+
+public class Solution {
+    public int findKthLargest(int[] nums, int k) {
+
+    }
+}
+
+
+```
+
+>You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+Example 1:
+coins = [1, 2, 5], amount = 11
+return 3 (11 = 5 + 5 + 1)
+Example 2:
+coins = [2], amount = 3
+return -1.
+Note:
+You may assume that you have an infinite number of each kind of coin. 
+
+```java
+
+public class Solution {
+    public int coinChange(int[] coins, int amount) {
+                
+    }
+}
+
+```
+
+
