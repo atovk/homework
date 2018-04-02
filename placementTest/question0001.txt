@@ -1,0 +1,260 @@
+﻿Section I
+
+
+1. Given the following code snippet, what will be the output of method “getResult” ?
+void swap(String str1, String str2){
+                String temp = str1;
+                str1 = str2;
+                str2 = temp;
+        }
+
+
+        void setNewValue(String str1){
+                str1 = new String("Bittiger");
+        }
+
+
+        void getResult(){
+                String str1 = "Bit";
+                String str2 = "Tigger";
+                swap(str1, str2);
+                System.out.println("str1:  " + str1);                          
+                System.out.println("str2:  " + str2);                        
+                setNewValue(str1);
+                System.out.println("str1:  " + str1);                        
+        }
+
+
+                
+1. What’s the Time & Space Complexity for quick sort and mergesort (BigO notation)?
+         
+1. Assuming we are calculating the value of nth element of a Fibonacci Array: 
+1, 1, 2, 3, 5, 8, 13, 21...... Please indicate what will happen if you run the following 
+code and modify it if you believe it is incorrect.
+
+
+public int fibonacci (int n) {
+
+
+        return fibonacci(n - 1) + fibonacci(n - 2);
+
+
+}
+          
+1. The computational complexity for adding(list.add()) one element to an Java ArrayList is _______ ?         
+ 
+1. Please differentiate data strucuture: Stack, Queue and Deque in shortest words. 
+ 
+
+
+1. What’s the value of maximum integer and minimum integer in JAVA(in 2^n format)
+ 
+__Max:_2^( )_+ ( )___; __Min:_2^( )_+_( )_
+
+
+1. What’s a correct and efficient way you believe to initialize an integer Stack/Queue/ArrayList in JAVA? Please write the three complete lines here, each for one data structure declaration correspondingly.
+ 
+
+
+
+
+1. Given the following code snippet, what will be the output of method “getResult” ?
+        void getResult() { 
+        String str1 = "Bittiger";
+        String str2 = "Bittiger";
+        String str3 = new String("Bittiger");
+        String str4 = new String("Bit") + "tiger";
+                
+        System.out.println(str1 == str2);                
+        System.out.println(str1 == str3);                
+        System.out.println(str1 == str4);                
+}
+ 
+
+
+
+
+Section II
+
+
+1. 
+
+Given two non-negative integers num1 and num2 represented as string, return the sum of num1 and num2.
+Note:
+1. The length of both num1 and num2 is < 5100.
+2. Both num1 and num2 contains only digits 0-9.
+3. Both num1 and num2 does not contain any leading zero.
+4. You must not use any built-in BigInteger library or convert the inputs to integer directly.
+
+
+JAVA:
+        Public class Solution{
+        Public String addStrings(String num1, String num2){
+
+
+}
+}
+ 
+
+
+Python:
+class Solution(object):
+    def addStrings(self, num1, num2):
+        """
+        :type num1: str
+        :type num2: str
+        :rtype: str
+        """
+
+
+ 
+
+
+C++: 
+
+
+class Solution {
+public:
+    string addStrings(string num1, string num2) {
+        
+    }
+};
+
+
+
+
+1. 
+
+Invert a binary tree.
+    4
+  /   \
+ 2     7
+/ \   / \
+1   3 6   9
+to
+    4
+  /   \
+ 7     2
+/ \   / \
+9   6 3   1
+Trivia:
+This problem was inspired by this original tweet by Max Howell:
+Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off.
+
+
+JAVA:
+        
+        Public class Solution{
+        Public TreeNode invertTree(TreeNode root){
+        
+}
+}
+
+
+ 
+
+
+Python:
+
+
+ class Solution(object):
+    def invertTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+
+
+
+
+C++: 
+
+
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        
+    }
+};
+
+
+
+
+1. 
+
+Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+For example,
+Given [3,2,1,5,6,4] and k = 2, return 5.
+Note:
+You may assume k is always valid, 1 <=  k <=  array's length.
+
+
+JAVA:
+
+
+public class Solution {
+    public int findKthLargest(int[] nums, int k) {
+
+
+    }
+}
+
+
+Python:
+
+
+class Solution(object):
+    def findKthLargest(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+
+
+C++: 
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        
+    }
+};
+
+
+1. 
+
+ You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+Example 1:
+coins = [1, 2, 5], amount = 11
+return 3 (11 = 5 + 5 + 1)
+Example 2:
+coins = [2], amount = 3
+return -1.
+Note:
+You may assume that you have an infinite number of each kind of coin. 
+
+
+JAVA:
+public class Solution {
+   public int coinChange(int[] coins, int amount) {
+                   
+   }
+}
+
+Python:
+class Solution(object):
+    def coinChange(self, coins, amount):
+        """
+        :type coins: List[int]
+        :type amount: int
+        :rtype: int
+        """
+
+
+C++: 
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        
+    }
+};
