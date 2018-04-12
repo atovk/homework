@@ -114,7 +114,15 @@ Google: 90% of our engineers use the software you wrote (Homebrew), but you can�
 ```java
 public class Solution{
     public TreeNode invertTree(TreeNode root){
+<<<<<<< HEAD
     
+=======
+        if(root==null) return root; // 可提价判断无叶子节点情况
+        TreeNode temp = root.right;
+        root.left = invertTree(root.right);
+        root.fight = invertTree(root.left);
+        return root;
+>>>>>>> origin/master
     }
 }
 
