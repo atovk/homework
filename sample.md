@@ -1,4 +1,5 @@
-# LC
+# LeetCode 
+
 * 作者：hongdong（洪冬）
 * 版本 2018-04-10
 
