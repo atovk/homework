@@ -1,4 +1,4 @@
-# LeetCode 
+# LeetCode 56
 
 * 作者：hongdong（洪冬）
 * 版本 2018-04-11
