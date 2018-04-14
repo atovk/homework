@@ -1,4 +1,8 @@
+<<<<<<< HEAD:week01/class1/LeetCode234_Palindrome_Linked_List.md
 # LeetCode 234
+=======
+# LeetCode 234. Palindrome Linked List
+>>>>>>> 87777de0d451c81926227968dff624fabdfc2574:week01/LeetCode234_Palindrome_Linked_List.md
 
 * 作者：hongdong（洪冬）
 * 版本 2018-04-11

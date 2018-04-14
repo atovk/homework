@@ -35,13 +35,13 @@ public int fibonacci (int n) {
 
 ArrayList 为无间隙数据结构，插入删除大多数情况下都需要更新下标，检索（定位）和修改不需要，则：插入O(N),删除O(N),检索（定位）O(1),修改O(1);
 
-##5. Please differentiate data strucuture: Stack, Queue and Deque in shortest words. 
+## 5. Please differentiate data strucuture: Stack, Queue and Deque in shortest words. 
 
 - Stack：FILO  
 - Queue：FIFO 
 - Deque： AIAO(FILO + FIFO); --!
 
-##6. What’s the value of maximum integer and minimum integer in JAVA(in 2^n format)
+## 6. What’s the value of maximum integer and minimum integer in JAVA(in 2^n format)
  
 __Max:_2^(31)_+ (-1)___; __Min:_-2^(31)_+_(0)_
 
@@ -114,11 +114,15 @@ Google: 90% of our engineers use the software you wrote (Homebrew), but you can�
 ```java
 public class Solution{
     public TreeNode invertTree(TreeNode root){
+<<<<<<< HEAD
+    
+=======
         if(root==null) return root; // 可提价判断无叶子节点情况
         TreeNode temp = root.right;
         root.left = invertTree(root.right);
         root.fight = invertTree(root.left);
         return root;
+>>>>>>> origin/master
     }
 }
 

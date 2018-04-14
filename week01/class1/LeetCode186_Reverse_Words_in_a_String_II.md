@@ -1,4 +1,8 @@
+<<<<<<< HEAD:week01/class1/LeetCode186_Reverse_Words_in_a_String_II.md
 # LeetCode 186
+=======
+# LeetCode 186 Reverse Words in a String II
+>>>>>>> 87777de0d451c81926227968dff624fabdfc2574:week01/LeetCode186_Reverse_Words_in_a_String_II.md
 
 * 作者：hongdong（洪冬）
 * 版本 2018-04-11
@@ -16,9 +20,8 @@ Could you do it in-place without allocating extra space?
 
 ## 思路报告
 - 理解步骤
-1. 第一想到自然是 通过 substrtring 但是题目规定 in-place
-2. 先将每个词内的字母先反转过来
-3. 再将整个 反转过来 
+1. in-place条件下，先将每个词内的字母先反转过来，
+2. 再将整个 反转过来 
 
 - 遇到问题
 1. 前后交换逻辑容易边界混淆
